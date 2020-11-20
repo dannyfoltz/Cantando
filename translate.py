@@ -7,7 +7,7 @@ class Translator():
 		pass
 
 	def load_data(self):
-		path = input(f'Please enter the desired song\'s file path: ')
+		path = input(f'Please enter the desired song\'s json file path: ')
 		with open(path) as f:
 			data = json.load(f)
 		lyrics = data['Lyrics'][0]
